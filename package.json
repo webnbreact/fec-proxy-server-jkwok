@@ -1,0 +1,14 @@
+{
+  "name": "fec-proxy",
+  "version": "1.0.0",
+  "description": "FEC Proxy Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "Johnson Kwok",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
