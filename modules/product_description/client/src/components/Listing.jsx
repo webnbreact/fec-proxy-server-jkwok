@@ -24,7 +24,7 @@ class Listing extends React.Component {
         this.setState({listingInfo: result})
       })
       .then(myJson => {
-        console.log(`this is myJSON`, myJson, this.state.listingInfo)
+        // console.log(`this is myJSON`, myJson, this.state.listingInfo)
       })
       .catch(error => {
         console.log('fetch error', error)
