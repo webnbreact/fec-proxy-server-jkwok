@@ -2,13 +2,16 @@ const express = require('express');
 const port = 3000;
 const database = require('../database/database.js');
 const path = require('path');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(cors());
 
-app.use('/rooms/:roomId', express.static(path.join(__dirname + '/../client/dist')));
+// app.use('/rooms/:roomId', express.static(path.join(__dirname + '/../client/dist')));
+app.use('/rooms/', express.static(path.join(__dirname + '/../client/dist')));
 
 app.get('/rooms/:roomId/hostDetails', (req, res) => {
     
