@@ -16,7 +16,7 @@ class Listing extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`/rooms/${this.state.id}/listings`)
+    fetch(`http://localhost:3003/rooms/${this.state.id}/listings`)
       .then(response =>
         response.json()
       )
