@@ -12,7 +12,6 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "styled-components": "^4.0.0"
+    "react-dom": "^16.7.0"
   }
 }

@@ -21,9 +21,9 @@ module.exports = {
       path: __dirname + '/client/dist'
     },
     resolve: {
-      alias: {
-        'styled-components': path.resolve('../../node_modules', 'styled-components'),
-      }
+      // alias: {
+      //   'styled-components': path.resolve('../../node_modules', 'styled-components'),
+      // }
     }
   };
   
