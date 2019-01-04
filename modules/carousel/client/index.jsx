@@ -13,7 +13,7 @@ import CarouselCentral from './CarouselCentral';
 //     ModuleRefresh();
 //   });
 // }
-render(<CarouselCentral />, document.getElementById('carouselroot'));
+render(<CarouselCentral />, document.getElementById('carousel-root'));
 // if webpack has injected hot into the module object then,
 // module.hot has to listen to any dependencies/or changes to Carouselcentral
 // even all the imports, and ucall ModuleRefresh.

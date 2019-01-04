@@ -11,6 +11,7 @@ app.use(morgan('dev'));
 app.use(urlencoded({ extended: false }));
 app.use(json());
 
+app.use(express.static(path.resolve(__dirname, '../public')));
 app.use('/rooms/:id/', express.static(path.resolve(__dirname, '../public')));
 
 

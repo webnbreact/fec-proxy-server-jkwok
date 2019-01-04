@@ -45,11 +45,10 @@ class CarouselLanding extends React.Component {
 
   componentDidMount() {
     let { handleGetPictures } = this.props;
-    console.log('hello');
     const queryUrl = url.parse(window.location.href).path;
-    this.getDataFromServer(queryUrl + 'pictures')
+    this.getDataFromServer('http://localhost:4500' + queryUrl + 'pictures')
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         this.setState({ imageUrls: data });
         handleGetPictures(data);
       });

@@ -13,7 +13,7 @@ mongoose
       mongoose.connection.dropCollection('pictures', () => {
         console.log('pictures dropped');
       });
-    },
+    }
   )
   .then(() => {
     var roomPicturesSchema = new mongoose.Schema(
@@ -31,7 +31,7 @@ mongoose
           type: Number,
         },
       },
-      { timestamps: true },
+      { timestamps: true }
     );
 
     const pictureMaker = mongoose.model('picture', roomPicturesSchema);

@@ -4,7 +4,7 @@ const picturesSchema = require('./schemas/Pictures.Schema');
 
 mongoose.connect(
   'mongodb://localhost:27017/carousel',
-  { useNewUrlParser: true },
+  { useNewUrlParser: true }
 );
 
 const PicturesSchema = new mongoose.Schema(picturesSchema, { timestamps: true });

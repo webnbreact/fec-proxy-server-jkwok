@@ -24,9 +24,9 @@ module.exports = {
     extensions: [
       '.js', '.jsx',
     ],
-    // alias: {
-    //   "styled-components": path.resolve(CarouselCard, "node_modules", "styled-components"),
-    // },
+    alias: {
+      'styled-components': path.resolve('../../node_modules', 'styled-components'),
+    },
   },
   devtool: 'inline-source-map',
 };
