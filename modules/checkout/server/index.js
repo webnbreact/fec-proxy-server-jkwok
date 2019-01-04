@@ -11,7 +11,7 @@ app.use(express.static(mainPagePath));
 app.use(morgan('tiny'));
 app.use(cors());
 
-// app.use('/rooms/:id/', express.static(mainPagePath));
+app.use('/rooms/:id/', express.static(mainPagePath));
 app.use('/rooms/', express.static(mainPagePath));
 
 app.get('/rooms/:id/booking', (req, res) => {
