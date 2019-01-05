@@ -9,12 +9,9 @@
   - https://github.com/webnbreact/reviews_module
   - https://github.com/webnbreact/carousel
 
-## Usage Instructions
-1)
-2)
-3)
-4)
-5)
+## Usage Instructions (local)
+1) Run "npm install"
+2) Go to webpage "http://localhost:3000"
 
 ## Docker Commands
 docker build -t mysql5.7 .
