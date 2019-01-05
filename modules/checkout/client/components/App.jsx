@@ -25,7 +25,7 @@ class App extends React.Component {
   componentDidMount() {
     const roomId = window.location.pathname.slice(7, -1);
     const randomRoomId = Math.ceil(Math.random() * 100);
-    fetch(`http://localhost:1337/rooms/${roomId || randomRoomId}/booking`)
+    fetch(`/rooms/${roomId || randomRoomId}/booking`)
       .then((data) => {
         return data.json();
       }).then((roomInfo) => {
