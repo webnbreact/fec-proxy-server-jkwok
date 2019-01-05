@@ -1,3 +1,9 @@
+#title {
+  font-family: 'Orbitron', sans-serif;
+  margin: 50px 50px 0 50px;
+  color: #5c99da;
+}
+
 body {
   display: flex;
   flex-direction: column;
