@@ -16,4 +16,8 @@
 4) Run "npm start".
 5) In a browser navigate to http://localhost:1337
 
-
+## Docker Commands
+docker build -t mysql5.7 .
+docker build -t nodeserver6 .
+docker run --name db_checkout -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -d mysql5.7
+docker run -d -p 80:1337 --name server_checkout johnsonkwok/nodeserver6:6.16

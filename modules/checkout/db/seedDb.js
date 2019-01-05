@@ -38,7 +38,7 @@ Promise.all(roomsPromises)
     const bookingsPromises = [];
     let roomId = 1;
     while (roomId <= 100) {
-      const bookingsPerRoom = faker.random.number({ min: 400, max: 700 });
+      const bookingsPerRoom = faker.random.number({ min: 100, max: 200 });
       for (let i = 0; i < bookingsPerRoom; i += 1) {
         const checkInDate = faker.date.between('2019-01-01', '2019-12-31');
         const checkOutDate = faker.date.future((14 / 365), checkInDate);
@@ -56,7 +56,7 @@ Promise.all(roomsPromises)
         bookingsPromises.push(bookingsPromise);
       }
 
-      const blackoutsPerRoom = faker.random.number({ min: 500, max: 1000 });
+      const blackoutsPerRoom = faker.random.number({ min: 50, max: 100 });
       for (let i = 0; i < blackoutsPerRoom; i += 1) {
         const checkInDate = faker.date.between('2018-12-01', '2019-12-31');
         const checkOutDate = faker.date.future((7 / 365), checkInDate);
