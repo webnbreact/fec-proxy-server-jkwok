@@ -1,3 +1,9 @@
+#title {
+  font-family: 'Orbitron', sans-serif;
+  margin: 15px 0 10px 70px;
+  color: #fd5a5f;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,17 +11,19 @@ body {
 
 #container-1 {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
+  margin-left: 100px;
 }
 
-#listing-description {
+#listing {
   padding-top: 30px; 
-  width: 600px;
+  width: 700px;
 }
 
 #reviews-root {
-  padding-left: 90px;
+  padding-left: 120px;
   width: 350px;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
+  margin-left: 100px;
 } 

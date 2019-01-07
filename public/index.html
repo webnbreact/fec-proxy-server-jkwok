@@ -6,28 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FEC Proxy Server</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/regular.css" integrity="sha384-aubIA90W7NxJ+Ly4QHAqo1JBSwQ0jejV75iHhj59KRwVjLVHjuhS3LkDAoa/ltO4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
-  <style>
-      body {
-        font-family: 'Montserrat';
-        font-size: 12px;
-      }
-  </style>
 </head>
 <body>
-  <div id="carousel-root"></div>
-  <div id="container-1">
-    <div id="listing-description"></div>
-    <div id="checkout"></div>
-  </div> 
-  <div id="reviews-root"></div>
-  <script src="http://localhost:4500/bundle.js"></script>
-  <script src="http://localhost:3003/rooms/bundle.js"></script>
-  <script src="http://localhost:3000/rooms/bundle.js"></script>
-  <script src="http://localhost:1337/rooms/bundle.js"></script>
- </body>
+  <h1 id="title">webnb</h1>
+  <main>
+    <div id="carouselroot"></div>
+    <div id="container-1">
+      <div id="listing"></div>
+      <div id="checkout"></div>
+    </div> 
+    <div id="reviews-root"></div>
+  </main>
+  <script src="http://ec2-18-221-26-182.us-east-2.compute.amazonaws.com/rooms/:id/bundle.js"></script>
+  <script src="http://ec2-13-59-45-120.us-east-2.compute.amazonaws.com/rooms/:id/bundle.js"></script>
+  <script src="http://ec2-18-224-7-253.us-east-2.compute.amazonaws.com/rooms/:id/bundle.js"></script>
+  <script src="http://ec2-18-218-142-121.us-east-2.compute.amazonaws.com/rooms/:id/bundle.js"></script>
+</body>
 </html>
